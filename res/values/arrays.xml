@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="support_type" >
+        <item>None</item>
+        <item>Touching buildplate</item>
+        <item>Everywhere</item>
+    </string-array>
+    
+           
+    <string-array name="platform_adhesion_type">
+        <item>None</item>
+        <item>Brim</item>
+        <item>Raft</item>
+    </string-array>
+    
+   <string-array name="print_quality_type">
+       <item>Hight quality print</item>
+       <item>Normal quality print</item>
+       <item>Fast low quality print</item>
+   </string-array>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="btn_bgcolor">#ff00ffff</color>
+    <color name="Control_IncDec_btn_bgcolor">#ff00ff00</color>
+<!--      <color name="panel_bgcolor">#ffffffff</color>-->
+      <color name="panel_bgcolor">#ff90c7ee</color> 
+       
+       
+    <color name="panel_btn_normal_bgcolor">#ff36B7E0</color>
+   <color name="panel_btn_pressed_bgcolor">#ffE83691</color>
+      <color name="panel_btn_text_color">#ffffffff</color>
+   
+   
+   <color name="control_inc_des_editbtn_normal_bgcolor">#ff36B7E0</color>
+   <color name="control_inc_des_edit_btn_pressed_bgcolor">#ffE83691</color>
+</resources>

@@ -1,0 +1,419 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:text="Quality"            
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:text="Layer height (mm)"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:text="Shell thickness (mm)"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:text="Enable retraction"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:text="Fill"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:text="Bottom/Top thickness (mm)"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:text="Fill Density (%)"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:text="Speed and Temperature"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:text="Print speed (mm/s)"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:text="Support"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:text="Support type"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:text="Platform adhesion type"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <!-- advance -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:text="Machine"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:text="Nozzle size (mm)"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:text="Quality"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:text="Initial layer thickness (mm)"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:text="Cut off object bottom (mm)"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:text="Dual extrusion overlay (mm)"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:text="Speed"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:text="Travel speed (mm/s)"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:text="Bottom layer speed (mm/s)"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:text="Infill speed (mm/s)"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:text="Outer shell speed (mm/s)"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:text="Inner shell speed (mm/s)"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:text="Cool"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:text="Minimal layer time (sec)"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:text="Enable cooling fan"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/linearLayoutTag"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="90dip"
+                android:layout_height="50dip"
+                android:ems="3"
+                android:inputType="numberDecimal"
+                android:visibility="invisible" />
+
+            <EditText    android:tag="layer_height"  android:text="0.1"
+                android:id="@+id/editText2"
+                android:layout_width="90dip"
+                android:layout_height="50dip"
+                android:ems="3"
+                android:inputType="numberDecimal" />
+
+            <EditText android:tag="wall_thickness"  android:text="0.8"
+                android:id="@+id/editText3"
+                android:layout_width="90dip"
+                android:layout_height="50dip"
+                android:ems="3"
+                android:inputType="numberDecimal" />
+
+            <CheckBox android:tag="retraction_enable"
+                android:id="@+id/editText4"
+                android:layout_width="90dip"
+                android:layout_height="50dip"
+				android:checked="true"
+			/>
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="90dip"
+                android:layout_height="50dip"
+                android:ems="3"
+                android:inputType="numberDecimal"
+                android:visibility="invisible" />
+
+            <EditText android:tag="solid_layer_thickness"  android:text="0.6"
+                android:id="@+id/editText6"
+                android:layout_width="90dip"
+                android:layout_height="50dip"
+                android:ems="3"
+                android:inputType="numberDecimal" />
+
+            <EditText android:tag="fill_density"  android:text="20"
+                android:id="@+id/editText7"
+                android:layout_width="90dip"
+                android:layout_height="50dip"
+                android:ems="3"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="90dip"
+                android:layout_height="50dip"
+                android:ems="3"
+                android:inputType="numberDecimal"
+                android:visibility="invisible" />
+
+            <EditText android:tag="print_speed"  android:text="50"
+                android:id="@+id/editText9"
+                android:layout_width="90dip"
+                android:layout_height="50dip"
+                android:ems="3"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/editText10"
+                android:layout_width="90dip"
+                android:layout_height="50dip"
+                android:ems="3"
+                android:inputType="numberDecimal"
+                android:visibility="invisible" />
+
+            <Spinner     android:tag="support"
+                android:id="@+id/spinner_SupportType"
+                android:layout_width="100dip"
+                android:layout_height="50dip"
+                android:drawSelectorOnTop="true"
+                android:prompt="@string/select_support_type" />
+
+            <Spinner  android:tag="platform_adhesion"
+                android:id="@+id/spinner_AdhesionType"
+                android:layout_width="100dip"
+                android:layout_height="50dip"
+                android:drawSelectorOnTop="true"
+                android:prompt="@string/select_adhesion_type" />
+            
+          <!-- advance -->
+          
+            <EditText
+                android:id="@+id/editText13"
+                android:layout_width="90dip"
+                android:layout_height="50dip"
+                android:ems="3"
+                android:inputType="numberDecimal"
+                android:visibility="invisible" />
+
+            <EditText  android:tag="nozzle_size"  android:text="0.4"
+                android:id="@+id/editText14"
+                android:layout_width="90dip"
+                android:layout_height="50dip"
+                android:ems="3"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/editText15"
+                android:layout_width="90dip"
+                android:layout_height="50dip"
+                android:ems="3"
+                android:inputType="numberDecimal"
+                android:visibility="invisible" />
+
+            <EditText  android:tag="bottom_thickness"  android:text="0.3" 
+                android:id="@+id/editText16"
+                android:layout_width="90dip"
+                android:layout_height="50dip"
+                android:ems="3"
+                android:inputType="numberDecimal" />
+
+            <EditText  android:tag="object_sink"  android:text="0.0"
+                android:id="@+id/editText17"
+                android:layout_width="90dip"
+                android:layout_height="50dip"
+                android:ems="3"
+                android:inputType="numberDecimal" />
+
+            <EditText  android:tag="overlap_dual"  android:text="0.15"
+                android:id="@+id/editText18"
+                android:layout_width="90dip"
+                android:layout_height="50dip"
+                android:ems="3"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/editText19"
+                android:layout_width="90dip"
+                android:layout_height="50dip"
+                android:ems="3"
+                android:inputType="numberDecimal"
+                android:visibility="invisible" />
+
+            <EditText  android:tag="travel_speed"  android:text="150"
+                android:id="@+id/editText20"
+                android:layout_width="90dip"
+                android:layout_height="50dip"
+                android:ems="3"
+                android:inputType="numberDecimal" />
+
+            <EditText  android:tag="bottom_layer_speed"  android:text="20"
+                android:id="@+id/editText21"
+                android:layout_width="90dip"
+                android:layout_height="50dip"
+                android:ems="3"
+                android:inputType="numberDecimal" />
+
+            <EditText  android:tag="infill_speed"  android:text="0"
+                android:id="@+id/editText22"
+                android:layout_width="90dip"
+                android:layout_height="50dip"
+                android:ems="3"
+                android:inputType="numberDecimal" />
+
+            <EditText  android:tag="inset0_speed"  android:text="0"
+                android:id="@+id/editText23"
+                android:layout_width="90dip"
+                android:layout_height="50dip"
+                android:ems="3"
+                android:inputType="numberDecimal" />
+
+            <EditText  android:tag="insetx_speed"  android:text="0"
+                android:id="@+id/editText24"
+                android:layout_width="90dip"
+                android:layout_height="50dip"
+                android:ems="3"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/editText25"
+                android:layout_width="90dip"
+                android:layout_height="50dip"
+                android:ems="3"
+                android:inputType="numberDecimal"
+                android:visibility="invisible" />
+
+            <EditText   android:tag="cool_min_layer_time"  android:text="5"
+                android:id="@+id/editText26"
+                android:layout_width="90dip"
+                android:layout_height="50dip"
+                android:ems="3"
+                android:inputType="numberDecimal" />
+
+            <CheckBox   android:tag="fan_enabled"
+                android:id="@+id/editText27"
+                android:layout_width="90dip"
+                android:checked="true"
+                android:layout_height="50dip" />
+  <Button android:id="@+id/ok_full_print_Btn"
+                android:layout_width="90dip"
+                android:text="OK"
+                android:layout_height="50dip" />
+        </LinearLayout>
+    </LinearLayout>
+          
+</ScrollView>

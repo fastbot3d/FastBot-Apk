@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/infoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="View"
+        android:textColor="#ffffffff"
+        android:textStyle="bold" />
+ <CheckBox
+                            android:id="@+id/editText4"
+                            android:layout_width="wrap_content"  android:gravity="center"
+                            android:layout_height="32dip"
+                            android:background="@android:color/white"
+                           
+                            android:checked="true"
+                            android:tag="retraction_enable" />
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="80dp"
+        android:layout_height="25dip"
+        android:ems="1"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android1:paddingTop="2dip"
+        android1:paddingBottom="2dip"
+        android:tag="layer_height"
+        android:text="0.1"
+         />
+<RadioGroup
+	                             android:id="@+id/printSettingRadioGroup"
+	                             android:layout_width="wrap_content"
+	                             android:layout_height="wrap_content"
+	                             android:orientation="vertical"
+	                             android:paddingLeft="10dp" >
+	                             <RadioButton  style="@style/Text_Black"
+	                                 android:id="@+id/lowQuaPrintSettingRadio"
+	                                 android:layout_width="wrap_content"
+	                                 android:layout_height="34dip"
+	                                 android:layout_marginTop="5dip"
+	                                 android:checked="true"
+	                                 android:text="Fast Low Quality" />
+	                             <RadioButton  style="@style/Text_Black"
+	                                 android:id="@+id/normalQuaPrintSettingRadio"
+	                                 android:layout_width="wrap_content"
+	                                 android:layout_height="34dip"
+	                                 android:layout_marginTop="5dip"
+	                                 android:text="Normal Quality" />
+	                             <RadioButton  style="@style/Text_Black"
+	                                 android:id="@+id/hightQuaPrintSettingRadio"
+	                                 android:layout_width="wrap_content"
+	                                 android:layout_height="34dip"
+	                                 android:layout_marginTop="5dip"
+	                                 android:text="Hight Quality" />	                             
+	                             <RadioButton  style="@style/Text_Black"
+	                                 android:id="@+id/optionQuaPrintSettingRadio"
+	                                 android:layout_width="wrap_content"
+	                                 android:layout_height="34dip"
+	                                 android:layout_marginTop="5dip"
+	                                 android:text="Advance Option" />
+	                      </RadioGroup>
+    <TextView
+        android:id="@+id/infoTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View2"
+        android:textColor="#ffffffff"
+        android:textStyle="bold" />
+
+    <TextView
+        android1:id="@+id/textView1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:text="Small Text"
+        android1:textAppearance="?android:attr/textAppearanceSmall" />
+
+</LinearLayout>
+
+    <RelativeLayout  android:layout_width="wrap_content" android:paddingLeft="10dp"
+                        android:layout_height="wrap_content" >
+                        <RadioGroup
+                            android:id="@+id/printSettingRadioGroup_0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:checkedButton="@+id/normalQuality" >
+                            <RadioButton style="@style/Text_Black"
+                                android:id="@+id/quickPrintSettingRadio"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Quick Setting" />
+
+                            <RadioButton  style="@style/Text_Black"
+                                android:id="@+id/fullPrintSettingRadio"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Full Setting" />
+                        </RadioGroup>
+
+                        <Spinner  
+                            android:id="@+id/quickPrintSettingTypeSpinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/printSettingRadioGroup_0"
+                            android:drawSelectorOnTop="true"
+                            android:tag="quickPrintSettingType" />
+
+                        <Button
+                            android1:id="@+id/fullPrintSettingRadio_Btn"
+                            android1:layout_width="90dip"
+                            android1:layout_height="50dip"
+                            android:layout_toRightOf="@+id/printSettingRadioGroup_0"
+                            android1:layout_alignLeft="@+id/quickPrintSettingTypeSpinner"
+                            android1:layout_below="@+id/quickPrintSettingTypeSpinner"
+                            android1:text="Open Setting" />
+
+                    </RelativeLayout>
+
+</LinearLayout>

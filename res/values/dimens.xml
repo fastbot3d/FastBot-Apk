@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btnWidth">80dip</dimen>
+    <dimen name="btnHeight">40dip</dimen>
+    <dimen name="panel_layout_marginRight">4dip</dimen>
+    <dimen name="panel_layout_marginTop">10dip</dimen>
+    <dimen name="threeStateButton_width">65dip</dimen>
+        <dimen name="threeStateButton_height">65dip</dimen>
+    
+    <dimen name="leftButton_marginLeft">4dip</dimen>
+        <dimen name="leftButton_marginTop">10dip</dimen>
+    <dimen name="leftButton_width">65dip</dimen>
+    <dimen name="leftButton_height">65dip</dimen>
+    
+    <dimen name="control_IncDec_btn_width">42dip</dimen>
+
+    <dimen name="View_sub_Button_width">55dip</dimen>
+    <dimen name="View_sub_Button_height">55dip</dimen>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+      <lkj.unicron.view.TouchButton
+        android:id="@+id/imageButton1"  android:background="@color/Control_IncDec_btn_bgcolor"
+         android:text="-"  android:padding="10dp"
+         android:textStyle="bold" 
+        android:layout_width="@dimen/control_IncDec_btn_width"
+        android:layout_height="@dimen/control_IncDec_btn_width"  android:layout_marginRight="1dp"
+         ></lkj.unicron.view.TouchButton> 
+         
+      <EditText
+          android:id="@+id/editText1"
+          android:layout_width="192dp"
+          android:layout_height="wrap_content"
+          android:ems="6"
+          android:gravity="center"
+          android:inputType="none"
+          android:singleLine="true" >
+
+      </EditText> 
+    
+	<lkj.unicron.view.TouchButton android:id="@+id/imageButton2" android:layout_marginLeft="1dp"
+	    android:background="@color/Control_IncDec_btn_bgcolor" android:padding="10dp" 
+		android:textStyle="bold"  android:text="+" 	android:layout_width="@dimen/control_IncDec_btn_width" 
+		android:layout_height="@dimen/control_IncDec_btn_width" ></lkj.unicron.view.TouchButton> 
+		
+
+</LinearLayout>

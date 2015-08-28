@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:nuicorn="http://schemas.android.com/apk/res/lkj.nuicorn"
+    android:id="@+id/stlFrameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/stlFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMax"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/leftButton_marginLeft"
+            
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/leftPanelBtn"  android:alpha="0.6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/loadButton"
+                    android:layout_width="@dimen/leftButton_width"
+                    android:layout_height="@dimen/leftButton_height"
+                    android:layout_marginTop="@dimen/leftButton_marginTop"
+                    android:background="@drawable/btn_background_load"
+                    android:text="" />
+				<TextView   android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:text="Load"   android:layout_gravity="center"
+					    android:textColor="#ffffffff" android:textStyle="bold" />
+                <Button
+                    android:id="@+id/saveButton"
+                    android:layout_width="@dimen/leftButton_width"
+                    android:layout_height="@dimen/leftButton_height"
+                    android:layout_marginTop="@dimen/leftButton_marginTop"
+                    android:background="@drawable/btn_background_save"
+                    android:text="" />
+				<TextView   android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:text="Save"   android:layout_gravity="center"
+					    android:textColor="#ffffffff" android:textStyle="bold" />
+                <Button
+                    android:id="@+id/gccodeButton"
+                    android:layout_width="@dimen/leftButton_width"
+                    android:layout_height="@dimen/leftButton_height"
+                    android:layout_marginTop="@dimen/leftButton_marginTop"
+                    android:background="@drawable/btn_background_make"
+                    android:text="" />
+				<TextView   android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:text="Make"   android:layout_gravity="center"
+					    android:textColor="#ffffffff" android:textStyle="bold" />
+                <Button
+                    android:id="@+id/preferncesButton"
+                    android:layout_width="@dimen/leftButton_width"
+                    android:layout_height="@dimen/leftButton_height"
+                    android:layout_marginTop="@dimen/leftButton_marginTop"
+                    android:background="@drawable/btn_background_setting"
+                    android:text="" />
+                <TextView   android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:text="Setting"   android:layout_gravity="center"
+					    android:textColor="#ffffffff" android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/leftViewPanelContainer"  
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout 
+                    android:id="@+id/settingPannelLayer1"   
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="@dimen/panel_layout_marginTop"
+                    android:background="@color/panel_bgcolor"
+                    android:gravity="left"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:visibility="gone"  android:alpha="0.6" >
+ 						
+					<TextView style="@style/Text_Bold_White"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dip"
+                        android:gravity="center" android:textSize="16sp"
+                        android:text="Material" />
+                         <RadioGroup style="@style/Text_White"
+                             android:id="@+id/materialRadioGroup"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:orientation="horizontal"
+                             android:paddingLeft="10dp" >
+
+                             <RadioButton   android:textSize="14sp"
+                                 android:id="@+id/plaMaterialRadio"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:checked="true" 
+                                 android:text="PLA" />
+
+                             <RadioButton   android:textSize="14sp"
+                                 android:id="@+id/absMaterialRadio"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="ABS" />
+                         </RadioGroup>
+                                
+                    <TextView style="@style/Text_Bold_White"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dip"
+                        android:gravity="center" android:textSize="16sp"
+                        android:text="Print Setting" />
+	                    <RadioGroup  style="@style/Text_White"
+	                             android:id="@+id/printSettingRadioGroup"
+	                             android:layout_width="wrap_content"
+	                             android:layout_height="wrap_content"
+	                             android:orientation="vertical"
+	                             android:paddingLeft="10dp" >
+	                             <RadioButton   android:textSize="14sp"
+	                                 android:id="@+id/lowQuaPrintSettingRadio"
+	                                 android:layout_width="wrap_content"
+	                                 android:layout_height="34dip"
+	                                 android:layout_marginTop="5dip"
+	                                 android:checked="true"
+	                                 android:text="Fast Low Quality" />
+	                             <RadioButton   android:textSize="14sp"
+	                                 android:id="@+id/normalQuaPrintSettingRadio"
+	                                 android:layout_width="wrap_content"
+	                                 android:layout_height="34dip"
+	                                 android:layout_marginTop="5dip"
+	                                 android:text="Normal Quality" />
+	                             <RadioButton   android:textSize="14sp"
+	                                 android:id="@+id/hightQuaPrintSettingRadio"
+	                                 android:layout_width="wrap_content"
+	                                 android:layout_height="34dip"
+	                                 android:layout_marginTop="5dip"
+	                                 android:text="Hight Quality" />	                             
+	                             <RadioButton    android:textSize="14sp"
+	                                 android:id="@+id/optionQuaPrintSettingRadio"
+	                                 android:layout_width="wrap_content"
+	                                 android:layout_height="34dip"
+	                                 android:layout_marginTop="5dip"
+	                                 android:text="Advance Option" />
+	                      </RadioGroup>
+                    <TextView style="@style/Text_Bold_White"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dip"
+                        android:gravity="center"  android:textSize="16sp"
+                        android:text="3D Model" />
+	                    <CheckBox style="@style/Text_White" android:textSize="14sp"
+						    android:id="@+id/displayBox_checkBox"
+						    android:layout_width="wrap_content"
+						    android:layout_height="wrap_content"
+						    android:text="Show model box" />
+				</LinearLayout>
+               
+                <LinearLayout 
+                    android:id="@+id/settingPannelLayer2"   
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="@dimen/panel_layout_marginTop"
+                    android:background="@color/panel_bgcolor"
+                    android:gravity="left"
+                    android:orientation="vertical"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="12dp"
+                    android:visibility="gone"  android:alpha="0.6" >
+	                
+	                <include  layout="@layout/full_setting_pannel" android:id="@+id/full_setting_layout"  />
+					<!-- <LinearLayout
+			        	android:layout_width="match_parent" android:layout_height="wrap_content"
+			        	android:layout_alignParentBottom="true"
+			        	android:gravity="center"
+			        	android:orientation="horizontal" >
+				        <Button style="@style/Button_Background"
+				            android:id="@+id/ok_setting_Btn"
+				            android:layout_width="90dip"
+				            android:layout_height="50dip"
+				            android:layout_marginRight="3dip"
+				            android:text="Save" />
+				        <Button style="@style/Button_Background"
+				            android:id="@+id/cancel_setting_Btn"
+				            android:layout_width="90dip"
+				            android:layout_height="50dip"
+				            android:layout_marginRight="3dip"
+				            android:text="Cancle" />
+				        <Button style="@style/Button_Background"
+				            android:id="@+id/restore_setting_Btn"
+				            android:layout_width="90dip"
+				            android:layout_height="50dip"
+				            android:text="Restore" />
+				        <Button style="@style/Button_Background"
+				            android:id="@+id/restore_setting_Btn"
+				            android:layout_width="90dip"
+				            android:layout_height="50dip"
+				            android:text="  >>  " />
+			       </LinearLayout> -->
+                 
+				</LinearLayout>
+                
+            </LinearLayout>
+        </LinearLayout>
+        
+<LinearLayout  android:visibility="gone"
+    android:id="@+id/linearLayoutMiddle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="15dp" 
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/infoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.6"
+        android:text="infoTex........."
+        android:textColor="#ff000000" />
+</LinearLayout>
+	
+	 <LinearLayout  android:id="@+id/linearLayoutRight" android:alpha="0.6"
+	    android:layout_width="wrap_content"   android:layout_weight="1"  
+		android:layout_height="wrap_content"	
+		android:orientation="vertical"  
+		 >
+				<LinearLayout
+	                android:id="@+id/viewPanel" android:visibility="gone" android:layout_gravity="right" android:layout_marginTop="@dimen/panel_layout_marginTop"
+	                android:layout_width="wrap_content"    android:background="@color/panel_bgcolor"  android:gravity="center"   
+	                android:layout_height="wrap_content" android:layout_marginRight="@dimen/panel_layout_marginRight"
+	                android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingTop="12dp" android:paddingBottom="12dp"
+	                android:orientation="vertical" >
+                    <LinearLayout android:orientation="horizontal" android:layout_marginBottom="10dp" 
+                         android:layout_height="wrap_content" android:layout_width="wrap_content" >
+		                    <ImageButton    android:background="@drawable/view_home" 
+						         	android:layout_width="@dimen/View_sub_Button_width" 
+									android:layout_height="@dimen/View_sub_Button_height"
+						         	android:layout_marginLeft="10dp"  android:layout_marginRight="10dp"	 />
+		                    
+	                      <Button android:id="@+id/homeBtn_viewPanel"   android:text="Home" android:background="@drawable/panel_btn_background"
+					         	android:layout_width="70dp"  android:layout_height="30dp" 
+					         	 android:layout_gravity="center_vertical"	
+					         	android:textColor="@color/panel_btn_text_color"
+					         	android:textStyle="bold" />
+                       </LinearLayout>
+                        <LinearLayout android:orientation="horizontal"  android:layout_marginBottom="10dp"  android:layout_height="wrap_content" android:layout_width="wrap_content" >
+		                    <ImageButton    android:background="@drawable/view_back" 
+						         	android:layout_width="@dimen/View_sub_Button_width" 
+									android:layout_height="@dimen/View_sub_Button_height"
+						         	android:layout_marginLeft="10dp"  android:layout_marginRight="10dp"	 />
+		                    
+			      	 	   <Button android:id="@+id/backBtn_viewPanel"   android:background="@drawable/panel_btn_background"
+					          android:text="Back" 	android:layout_width="70dp"  android:layout_height="30dp"
+					          android:textColor="@color/panel_btn_text_color"  android:layout_gravity="center_vertical"
+					          android:textStyle="bold"	/>
+		      	 	    </LinearLayout>
+                        <LinearLayout android:orientation="horizontal"  android:layout_marginBottom="10dp"  android:layout_height="wrap_content" android:layout_width="wrap_content" >
+		                    <ImageButton    android:background="@drawable/view_left" 
+						         	android:layout_width="@dimen/View_sub_Button_width" 
+									android:layout_height="@dimen/View_sub_Button_height"
+						         	android:layout_marginLeft="10dp"  android:layout_marginRight="10dp"	 />
+		                    
+			      	 	   <Button android:id="@+id/leftBtn_viewPanel"   android:background="@drawable/panel_btn_background"
+					          android:text="Left" 	android:layout_width="70dp"  android:layout_height="30dp"  
+					          android:textColor="@color/panel_btn_text_color"  android:layout_gravity="center"
+					          android:textStyle="bold"	/>
+		      	 	    </LinearLayout>
+                        <LinearLayout android:orientation="horizontal"  android:layout_marginBottom="10dp"  android:layout_height="wrap_content" android:layout_width="wrap_content" >
+                    		<ImageButton    android:background="@drawable/view_right" 
+				         		android:layout_width="@dimen/View_sub_Button_width" 
+								android:layout_height="@dimen/View_sub_Button_height"
+				         		android:layout_marginLeft="10dp"  android:layout_marginRight="10dp"	 />
+                    
+			      	 	   	<Button android:id="@+id/rightBtn_viewPanel"   android:background="@drawable/panel_btn_background"
+					          android:text="Right" 	android:layout_width="70dp"  android:layout_height="30dp"  
+					          android:textColor="@color/panel_btn_text_color" android:layout_gravity="center"
+					          android:textStyle="bold"	/>
+		      	 	 </LinearLayout>
+		      	 	 
+                        <LinearLayout android:orientation="horizontal"  android:layout_marginBottom="10dp"   android:layout_height="wrap_content" android:layout_width="wrap_content" >
+                   			 <ImageButton    android:background="@drawable/view_top" 
+				         		android:layout_width="@dimen/View_sub_Button_width" 
+								android:layout_height="@dimen/View_sub_Button_height" 
+				         		android:layout_marginLeft="10dp"  android:layout_marginRight="10dp"	 />
+                       		      	 	   		      	 	   
+			      	 	   	<Button android:id="@+id/topBtn_viewPanel"   android:background="@drawable/panel_btn_background"
+					          android:text="Top" 	android:layout_width="70dp"  android:layout_height="30dp"   
+					          android:textColor="@color/panel_btn_text_color" android:layout_gravity="center"
+					          android:textStyle="bold"	/>
+		      	 	   	 </LinearLayout>
+                    
+		        </LinearLayout>
+		        <LinearLayout
+	                android:id="@+id/movePanel"   android:visibility="gone"  android:layout_gravity="right" android:layout_marginTop="@dimen/panel_layout_marginTop"
+	                android:layout_width="wrap_content"     android:background="@color/panel_bgcolor"  android:gravity="center"   
+	                android:layout_height="wrap_content"  android:layout_marginRight="@dimen/panel_layout_marginRight"
+	                android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingTop="12dp" android:paddingBottom="12dp"
+	                android:orientation="vertical" >
+		       		  <lkj.unicron.view.Control_IncDec  
+		         		android:id="@+id/leftRight_movePanel" 
+		        	    android:layout_width="wrap_content" android:layout_height="wrap_content">   
+		      	 	   </lkj.unicron.view.Control_IncDec> 
+		       		  <lkj.unicron.view.Control_IncDec  
+		         		android:id="@+id/frontBack_movePanel"
+		        	    android:layout_width="wrap_content" android:layout_height="wrap_content">   
+		      	 	   </lkj.unicron.view.Control_IncDec> 
+		      	 	   <lkj.unicron.view.Control_IncDec
+		         		android:id="@+id/upDown_movePanel"
+		        	    android:layout_width="wrap_content" android:layout_height="wrap_content">   
+		      	 	   </lkj.unicron.view.Control_IncDec>
+		      	 	   	<Button android:id="@+id/onPlatformBtn_movePanel"   android:background="@drawable/panel_btn_background"
+				          android:text="On Platform" 	android:layout_width="@dimen/btnWidth" android:layout_height="@dimen/btnHeight" 
+				           android:layout_marginBottom="10dp" android:textStyle="bold" android:textColor="@color/panel_btn_text_color"
+				          />		      	 	       
+		      	 	    
+		      	 	   	<Button android:id="@+id/centerBtn_movePanel"  android:background="@drawable/panel_btn_background"
+				          android:text="Center" 	android:layout_width="@dimen/btnWidth" android:layout_height="@dimen/btnHeight"
+				           android:layout_marginBottom="10dp" android:textStyle="bold" android:textColor="@color/panel_btn_text_color"
+				          />
+		               <Button android:id="@+id/resetBtn_movePanel"   android:background="@drawable/panel_btn_background"
+				          android:text="Reset" 	android:layout_width="@dimen/btnWidth" android:layout_height="@dimen/btnHeight"
+				          android:textStyle="bold"  android:textColor="@color/panel_btn_text_color"
+				          android:layout_marginBottom="10dp" 
+				          />
+		        </LinearLayout>
+		        <LinearLayout
+	                android:id="@+id/rotatePanel"  android:visibility="gone"  android:layout_gravity="right" android:layout_marginTop="@dimen/panel_layout_marginTop"
+	                android:layout_width="wrap_content"     android:background="@color/panel_bgcolor"  android:gravity="center"   
+	                android:layout_height="wrap_content"  android:layout_marginRight="@dimen/panel_layout_marginRight"
+	              	android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingTop="12dp" android:paddingBottom="12dp"
+	                android:orientation="vertical" >
+		           <LinearLayout android:orientation="horizontal"  android:layout_height="wrap_content" android:layout_width="wrap_content" >
+		       		  <lkj.unicron.view.Control_IncDec  
+		         		android:id="@+id/x_rotatePanel" 
+		        	    android:layout_width="wrap_content" android:layout_height="wrap_content">   
+		      	 	   </lkj.unicron.view.Control_IncDec>   
+		      	 	   <Button android:id="@+id/x_dec_90_rotatePanel"   android:background="@drawable/panel_btn_background" android:layout_marginLeft="3dp" android:layout_marginRight="3dp"
+		      	 	       android:padding="10dp" android:textColor="@color/panel_btn_text_color"
+		                   android:textStyle="bold" android:text="-90" 	android:layout_width="wrap_content" android:layout_height="@dimen/control_IncDec_btn_width" />
+		      	 	   <Button android:id="@+id/x_inc_90_rotatePanel"   android:background="@drawable/panel_btn_background"
+		      	 	       android:padding="10dp" android:textColor="@color/panel_btn_text_color"
+		                   android:textStyle="bold" android:text="+90" 	android:layout_width="wrap_content" android:layout_height="@dimen/control_IncDec_btn_width" />    
+		      	 	   </LinearLayout>
+		      	 	 
+		      	 	 <LinearLayout android:orientation="horizontal"  android:layout_height="wrap_content" android:layout_width="wrap_content" >  
+		       		  <lkj.unicron.view.Control_IncDec 
+		         		android:id="@+id/y_rotatePanel"
+		        	    android:layout_width="wrap_content" android:layout_height="wrap_content">   
+		      	 	   </lkj.unicron.view.Control_IncDec> 
+		      	 	  <Button android:id="@+id/y_dec_90_rotatePanel"   android:background="@drawable/panel_btn_background" android:layout_marginLeft="3dp" android:layout_marginRight="3dp"
+		      	 	       android:padding="10dp" android:textColor="@color/panel_btn_text_color"
+		                   android:textStyle="bold" android:text="-90" 	android:layout_width="wrap_content" android:layout_height="@dimen/control_IncDec_btn_width" />
+		      	 	   <Button android:id="@+id/y_inc_90_rotatePanel"   android:background="@drawable/panel_btn_background"
+		      	 	       android:padding="10dp" android:textColor="@color/panel_btn_text_color"
+		                   android:textStyle="bold" android:text="+90" 	android:layout_width="wrap_content" android:layout_height="@dimen/control_IncDec_btn_width" />    
+		      	 	 </LinearLayout> 
+		      	 	 
+		       		   <LinearLayout android:orientation="horizontal"  android:layout_height="wrap_content" android:layout_width="wrap_content" >  
+		      	 	   <lkj.unicron.view.Control_IncDec
+		         		android:id="@+id/z_rotatePanel"
+		        	    android:layout_width="wrap_content" android:layout_height="wrap_content">   
+		      	 	   </lkj.unicron.view.Control_IncDec>
+		      	 	   <Button android:id="@+id/z_dec_90_rotatePanel"   android:background="@drawable/panel_btn_background" android:layout_marginLeft="3dp" android:layout_marginRight="3dp"
+		      	 	       android:padding="10dp" android:textColor="@color/panel_btn_text_color"
+		                   android:textStyle="bold" android:text="-90" 	android:layout_width="wrap_content" android:layout_height="@dimen/control_IncDec_btn_width" />
+		      	 	   <Button android:id="@+id/z_inc_90_rotatePanel"   android:background="@drawable/panel_btn_background"
+		      	 	       android:padding="10dp" android:textColor="@color/panel_btn_text_color"
+		                   android:textStyle="bold" android:text="+90" 	android:layout_width="wrap_content" android:layout_height="@dimen/control_IncDec_btn_width" />    
+		      	 	   </LinearLayout>
+		      	 	   
+		               <Button android:id="@+id/resetBtn_rotatePanel"   android:background="@drawable/panel_btn_background"
+		                   android:textStyle="bold"  android:textColor="@color/panel_btn_text_color"
+				          android:text="Reset" 	android:layout_width="@dimen/btnWidth" android:layout_height="@dimen/btnHeight" >		      	 	       
+		      	 	   </Button>
+		       
+		        </LinearLayout>
+		        <LinearLayout
+	                android:id="@+id/scalePanel"  android:visibility="gone"  android:layout_gravity="right" android:layout_marginTop="@dimen/panel_layout_marginTop"
+	                android:layout_width="wrap_content"     android:background="@color/panel_bgcolor" android:gravity="center"    
+	                android:layout_height="wrap_content"  android:layout_marginRight="@dimen/panel_layout_marginRight"
+	                android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingTop="12dp" android:paddingBottom="12dp"
+	                android:orientation="vertical" >
+		              <lkj.unicron.view.Control_IncDec  
+		         		android:id="@+id/length_scalePanel" 
+		        	    android:layout_width="wrap_content" android:layout_height="wrap_content">   
+		      	 	   </lkj.unicron.view.Control_IncDec> 
+		       		  <lkj.unicron.view.Control_IncDec  android:tag="listen_look_back" 
+		         		android:id="@+id/width_scalePanel"
+		        	    android:layout_width="wrap_content" android:layout_height="wrap_content">   
+		      	 	   </lkj.unicron.view.Control_IncDec> 
+		      	 	   <lkj.unicron.view.Control_IncDec
+		         		android:id="@+id/height_scalePanel"
+		        	    android:layout_width="wrap_content" android:layout_height="wrap_content">   
+		      	 	   </lkj.unicron.view.Control_IncDec>
+		      	 	   <lkj.unicron.view.Control_IncDec 
+		         		android:id="@+id/percent_scalePanel"
+		        	    android:layout_width="wrap_content" android:layout_height="wrap_content">   
+		      	 	   </lkj.unicron.view.Control_IncDec>
+		      	 	   
+		      	 	   	<CheckBox android:id="@+id/uniformBtn_scalePanel"    android:background="@drawable/panel_btn_background"
+		                   android:layout_width="wrap_content" android:layout_height="@dimen/btnHeight"
+		                   android:textStyle="bold" android:layout_marginBottom="10dp" android:textColor="@color/panel_btn_text_color"
+		                   android:text="Uniform Scale"  />
+<!-- 		               <Button android:id="@+id/uniformBtn_scalePanel"  android:background="@color/btn_bgcolor"
+		                   android:layout_width="@dimen/btnWidth" android:layout_height="@dimen/btnHeight"
+		                   android:textStyle="bold" android:layout_marginBottom="10dp"
+				          android:text="Uniform" 	/>	 -->	
+				       <Button android:id="@+id/MaxBtn_scalePanel"  android:background="@drawable/panel_btn_background"
+		                   android:layout_width="@dimen/btnWidth" android:layout_height="@dimen/btnHeight"
+		                   android:textStyle="bold" android:layout_marginBottom="10dp" android:textColor="@color/panel_btn_text_color"
+				          android:text="Max Size" 	/>	
+				       <Button android:id="@+id/resetBtn_scalePanel"  android:background="@drawable/panel_btn_background"
+		                   android:layout_width="@dimen/btnWidth" android:layout_height="@dimen/btnHeight"
+		                   android:textStyle="bold" android:layout_marginBottom="10dp" android:textColor="@color/panel_btn_text_color"
+				          android:text="Reset" 	/>	      	 	       
+		       
+		        </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lLayoutPanelBtn" android:alpha="0.6"
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" android:layout_marginRight="5dp"
+                android:layout_gravity="right"
+                android:orientation="vertical" >
+
+				<lkj.unicron.view.ThreeStateButton android:id="@+id/lookBtn"   android:layout_marginTop="@dimen/panel_layout_marginTop"
+				    android:text="" 	android:layout_width="@dimen/threeStateButton_width" 
+					android:layout_height="@dimen/threeStateButton_height"
+					nuicorn:normalBackground="@drawable/view_btn_background_normal_holo"
+					nuicorn:greenBackground="@drawable/view_btn_background_green_holo"
+					nuicorn:redBackground="@drawable/view_btn_background_red_holo"
+					 />
+
+					<TextView android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:text="View"   android:layout_gravity="center"
+					    android:textColor="#ffffffff" android:textStyle="bold" />
+
+				<lkj.unicron.view.ThreeStateButton android:id="@+id/moveBtn"  android:layout_marginTop="@dimen/panel_layout_marginTop"
+				    android:text="" 	 	android:layout_width="@dimen/threeStateButton_width" 
+					android:layout_height="@dimen/threeStateButton_height"
+					nuicorn:normalBackground="@drawable/move_btn_background_normal_holo"
+					nuicorn:greenBackground="@drawable/move_btn_background_green_holo"
+					nuicorn:redBackground="@drawable/move_btn_background_red_holo"
+					 />
+					<TextView   android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:text="Move"   android:layout_gravity="center"
+					    android:textColor="#ffffffff" android:textStyle="bold" />
+					
+				<lkj.unicron.view.ThreeStateButton android:id="@+id/rotateBtn"  android:layout_marginTop="@dimen/panel_layout_marginTop"
+				    android:text="" 	android:layout_width="@dimen/threeStateButton_width" 
+					android:layout_height="@dimen/threeStateButton_height" 
+					nuicorn:normalBackground="@drawable/rotate_btn_background_normal_holo"
+					nuicorn:greenBackground="@drawable/rotate_btn_background_green_holo"
+					nuicorn:redBackground="@drawable/rotate_btn_background_red_holo"
+					/>
+					<TextView   android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:text="Turn"   android:layout_gravity="center"
+					    android:textColor="#ffffffff" android:textStyle="bold" />
+				<lkj.unicron.view.ThreeStateButton android:id="@+id/scaleBtn"  android:layout_marginTop="@dimen/panel_layout_marginTop"
+				    android:text="" 	 	android:layout_width="@dimen/threeStateButton_width" 
+					android:layout_height="@dimen/threeStateButton_height"
+					nuicorn:normalBackground="@drawable/scale_btn_background_normal_holo"
+					nuicorn:greenBackground="@drawable/scale_btn_background_green_holo"
+					nuicorn:redBackground="@drawable/scale_btn_background_red_holo"
+					 />
+				<TextView   android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:text="Scale"   android:layout_gravity="center"
+					    android:textColor="#ffffffff" android:textStyle="bold" />
+            </LinearLayout>
+			 
+	</LinearLayout>
+		
+
+ </FrameLayout>

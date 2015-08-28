@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:padding="5dp"
+	>
+	<RadioGroup android:id="@+id/quickPrintQuality"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:checkedButton="@+id/normalQuality"
+		     >
+		     
+			<RadioButton
+		        android:id="@+id/lowQuality"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="20dip"
+		        android:text="Low Quality" />
+
+		    <RadioButton
+		        android:id="@+id/normalQuality"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="20dip"
+		        android:text="Normal Quality" />
+
+		    <RadioButton
+		        android:id="@+id/hightQuality"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="20dip"
+		        android:text="Hight Quality" />
+		    </RadioGroup>
+</LinearLayout>
+    
